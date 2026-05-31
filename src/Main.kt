@@ -16,7 +16,7 @@ fun max(a: Int, b: Int): Int {
 }
 
 fun describe(text: String?): String {
-    return text?.length.toString() ?: "нет текста"
+    return (text?.length ?: "нет текста").toString()
 }
 
 fun isEven(n: Int): Boolean {
