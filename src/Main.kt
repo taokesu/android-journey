@@ -5,18 +5,12 @@ fun main() {
     println(isEven(2))
 }
 
-fun greet(name: String): String {
-    return "Привет, " + name + "!"
-}
+fun greet(name: String): String = "Привет, $name!"
 
-fun max(a: Int, b: Int): Int {
-    if (a > b) return a
-    else if (a < b) return b
-    else return a
-}
+fun max(a: Int, b: Int): Int = if (a > b) a else b
 
 fun describe(text: String?): String {
-    return (text?.length ?: "нет текста").toString()
+    return if (text != null) "Длина: ${text.length}" else "Нет текста"
 }
 
 fun isEven(n: Int): Boolean {
