@@ -2,6 +2,7 @@ fun main() {
     println(greet("Alex"))
     println(max(5, 4))
     println(describe(null))
+    println(isEven(2))
 }
 
 fun greet(name: String): String {
@@ -18,3 +19,6 @@ fun describe(text: String?): String {
     return text?.length.toString() ?: "нет текста"
 }
 
+fun isEven(n: Int): Boolean {
+    return n % 2 == 0
+}
